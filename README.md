@@ -32,7 +32,7 @@ $ pip install -r requirements.txt
 
 As you settle into your development environment, run the following unit tests to check that your environment is set up correctly.
 
-```python
+```sh
 $ python3 -m unittest --verbose tests.test_python_version
 test_python_version_is_at_least_3_9 (tests.test_python_version.TestPythonVersion) ... ok
 
@@ -63,7 +63,7 @@ This project is driven by the `main.py` script. That means that you'll run `pyth
 
 At a command line, you can run `python3 main.py --help` for an explanation of how to invoke the script.
 
-```python
+```sh
 usage: main.py [-h] [--neofile NEOFILE] [--cadfile CADFILE] {inspect,query,interactive} ...
 
 Explore past and future close approaches of near-Earth objects.
@@ -98,7 +98,7 @@ optional arguments:
 
 Here are a few examples of the `inspect` subcommand in action:
 
-```
+```sh
 # Inspect the NEO with a primary designation of 433 (that's Eros!)
 $ python3 main.py inspect --pdes 433
 NEO '433 (Eros)' has a diameter of 16.840 km and is not potentially hazardous.
